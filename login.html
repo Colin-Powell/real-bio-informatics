@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassy Login Page</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed; /* Replace with your healthcare-themed image URL */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glassy Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(1px);
+}
+
+/* Glassy Login Box */
+.login-box {
+    background: rgba(76, 113, 134, 0.692);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(137, 173, 143, 0.18);
+    width: 300px;
+}
+
+/* Login Form Styling */
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #d4cfcf;
+    font-weight: 500;
+}
+.or {
+    color: white;
+}
+.login-box p {
+    color: rgb(223, 214, 214);
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #28a745; 
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+.social-icons {
+    margin-top: 10px;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Email address" required>
+                </div>
+                <div class="input-group">
+                    <input type="phone" placeholder="Phone number">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Write Message" required>
+                </div>
+                <button type="submit">Send Message</button>
+                <span class="or">--------------- or -----------------</span>
+                <p> Reach us through our social media platforms!</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
